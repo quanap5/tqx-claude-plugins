@@ -1,0 +1,162 @@
+/* ============================================================
+   TwinQX · Terracotta Atlas (Phương án B) — Design Tokens
+   Warm Light · Hỏa + Thổ · Knowledge-first brand system
+   Embed this <style> block in the <head> of every generated page.
+   ============================================================ */
+
+:root {
+  /* ── Core palette · master V2 (page 13) ───────────────────── */
+  --tqx-cream:      #F4ECD8; /* Background · Cream (Thổ)            */
+  --tqx-paper:      #F8F2E4; /* Lighter surface · Warm paper        */
+  --tqx-ink:        #2A1A12; /* Text · Warm ink                     */
+  --tqx-terracotta: #A14B2B; /* Brand · Terracotta (Hỏa-Thổ)        */
+  --tqx-sienna:     #C97B4A; /* Pulse / AI · Burnt sienna           */
+  --tqx-ochre:      #D4A03E; /* Accent · Golden ochre (Thổ)         */
+  --tqx-chocolate:  #5C3B22; /* Deep · Chocolate (Thổ)              */
+
+  /* ── Neutrals · Thổ sinh Kim (dùng phụ, KHÔNG chủ đạo) ─────── */
+  --tqx-linen:      #E7DCC4; /* hairline / muted surface on cream   */
+  --tqx-warm-gray:  #A89880; /* captions / secondary text           */
+  --tqx-copper:     #B08C5A; /* metallic accent                     */
+
+  /* ── Dark product face · kế thừa Hướng A (page 6) ─────────── */
+  --tqx-ember:      #15110E; /* dark background                     */
+  --tqx-graphite:   #211B17; /* dark surface                        */
+  --tqx-amber:      #E89B3A; /* dark-mode signal                    */
+  --tqx-bronze:     #8B6B3D; /* dark-mode accent                    */
+  --tqx-dark-text:  #F3EDE0; /* cream text on dark                  */
+
+  /* ── Functional / status · TRÁNH xanh lá (Mộc khắc Thổ) ────── */
+  --tqx-ok:         #5C3B22; /* healthy → deep neutral, never green */
+  --tqx-watch:      #D4A03E; /* warning / watch → ochre             */
+  --tqx-alert:      #A14B2B; /* critical → terracotta               */
+
+  /* ── Semantic roles (LIGHT brand-master mode = default) ────── */
+  --bg:        var(--tqx-cream);
+  --surface:   var(--tqx-paper);
+  --text:      var(--tqx-ink);
+  --muted:     var(--tqx-warm-gray);
+  --brand:     var(--tqx-terracotta);
+  --accent:    var(--tqx-ochre);
+  --signal:    var(--tqx-sienna);
+  --hairline:  var(--tqx-linen);
+  --on-brand:  var(--tqx-cream); /* text sitting on a terracotta fill */
+
+  /* ── Typography (Geist / IBM Plex Mono · page 13) ──────────── */
+  --font-display: 'Geist','Inter',system-ui,-apple-system,sans-serif;
+  --font-body:    'Geist','Inter',system-ui,-apple-system,sans-serif;
+  --font-mono:    'IBM Plex Mono',ui-monospace,'SF Mono',monospace;
+
+  /* Type scale (H1–H5 + label) */
+  --fs-h1:   clamp(2.6rem, 6vw, 5rem);
+  --fs-h2:   clamp(2rem, 4.2vw, 3.4rem);
+  --fs-h3:   clamp(1.4rem, 2.4vw, 1.9rem);
+  --fs-h4:   1.25rem;
+  --fs-body: 1.0625rem;
+  --fs-label:0.78rem;     /* mono labels, uppercase, tracked        */
+
+  /* Rhythm */
+  --maxw:    1200px;
+  --gap:     clamp(1rem, 2.4vw, 2rem);
+  --pad-y:   clamp(3.5rem, 8vw, 7rem);
+  --radius:  14px;
+  --radius-sm: 8px;
+  --track:   0.22em;      /* letter-spacing for mono labels         */
+}
+
+/* Dark face — for product UI / dashboard sections (Hướng A) */
+[data-tqx-mode="dark"] {
+  --bg:       var(--tqx-ember);
+  --surface:  var(--tqx-graphite);
+  --text:     var(--tqx-dark-text);
+  --muted:    #9A8A72;
+  --brand:    var(--tqx-terracotta);
+  --accent:   var(--tqx-amber);
+  --signal:   var(--tqx-sienna);
+  --hairline: rgba(243,237,224,0.12);
+  --on-brand: var(--tqx-dark-text);
+}
+
+/* ── Base reset ─────────────────────────────────────────────── */
+*,*::before,*::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.01em;
+}
+h1,h2,h3,h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.5em;
+}
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+h4 { font-size: var(--fs-h4); }
+p  { margin: 0 0 1em; max-width: 62ch; }
+a  { color: var(--brand); text-underline-offset: 3px; }
+
+/* ── Brand primitives ───────────────────────────────────────── */
+
+/* Mono section label, e.g. "B R A N D · 02" */
+.tqx-label {
+  font-family: var(--font-mono);
+  font-size: var(--fs-label);
+  text-transform: uppercase;
+  letter-spacing: var(--track);
+  color: var(--brand);
+}
+
+/* Wordmark — only the X is accented (per brand guide) */
+.tqx-logo {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+.tqx-logo .x { color: var(--accent); }
+
+/* Layout container */
+.tqx-wrap { max-width: var(--maxw); margin-inline: auto; padding-inline: clamp(1.2rem,4vw,2.5rem); }
+.tqx-section { padding-block: var(--pad-y); }
+
+/* Card */
+.tqx-card {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  padding: clamp(1.3rem, 2.5vw, 2rem);
+}
+
+/* Button */
+.tqx-btn {
+  display: inline-flex; align-items: center; gap: .5em;
+  font-family: var(--font-body); font-weight: 600;
+  padding: .8em 1.4em; border-radius: 999px;
+  background: var(--brand); color: var(--on-brand);
+  border: 1px solid var(--brand); text-decoration: none;
+  transition: transform .15s ease, filter .15s ease;
+}
+.tqx-btn:hover { filter: brightness(1.08); transform: translateY(-1px); }
+.tqx-btn--ghost { background: transparent; color: var(--brand); }
+
+/* Status pill — uses warm functional colors, never green */
+.tqx-pill { font-family: var(--font-mono); font-size: var(--fs-label);
+  text-transform: uppercase; letter-spacing: .12em; padding: .25em .7em;
+  border-radius: 999px; border: 1px solid currentColor; }
+.tqx-pill--ok    { color: var(--tqx-ok); }
+.tqx-pill--watch { color: var(--tqx-watch); }
+.tqx-pill--alert { color: var(--tqx-alert); }
+
+/* Swatch chip */
+.tqx-swatch { border-radius: var(--radius-sm); aspect-ratio: 1/1;
+  display: flex; align-items: flex-end; padding: .7rem;
+  font-family: var(--font-mono); font-size: .72rem; letter-spacing: .08em; }

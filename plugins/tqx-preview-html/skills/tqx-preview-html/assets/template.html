@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi" data-tqx-mode="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TwinQX — {{PAGE_TITLE}}</title>
+<!-- Fonts: Geist (display/body) + IBM Plex Mono (labels). Tải từ Google Fonts ở trình duyệt người dùng. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* === PASTE tokens.css HERE (the full :root + base + primitives block) === */
+/* The skill will inline assets/tokens.css at this point. */
+</style>
+<style>
+/* Page-specific styles go here */
+.tqx-nav { display:flex; justify-content:space-between; align-items:center;
+  padding-block:1.1rem; border-bottom:1px solid var(--hairline); }
+.tqx-nav a { color:var(--text); text-decoration:none; font-size:.95rem; }
+.tqx-nav .links { display:flex; gap:1.8rem; }
+
+.hero { display:grid; gap:2.5rem; align-items:center; }
+.hero .eyebrow { margin-bottom:1.2rem; }
+.hero h1 { max-width:14ch; }
+.hero p { font-size:clamp(1.05rem,1.6vw,1.3rem); color:var(--muted); }
+.hero .cta { display:flex; gap:.9rem; margin-top:2rem; flex-wrap:wrap; }
+
+.swatch-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:.9rem; }
+
+.dash { background:var(--tqx-ember); color:var(--tqx-dark-text); border-radius:var(--radius);
+  padding:clamp(1.3rem,2.5vw,2rem); font-family:var(--font-mono); }
+.dash .row { display:flex; justify-content:space-between; padding:.6rem 0;
+  border-bottom:1px solid rgba(243,237,224,.10); font-size:.9rem; }
+.dash .big { font-family:var(--font-display); font-size:2.4rem; font-weight:600; }
+
+.tqx-footer { border-top:1px solid var(--hairline); padding-block:2.5rem;
+  font-family:var(--font-mono); font-size:.8rem; color:var(--muted);
+  text-transform:uppercase; letter-spacing:.12em; }
+
+@media (min-width:820px){ .hero{ grid-template-columns:1.1fr .9fr; } }
+</style>
+</head>
+<body>
+
+<header class="tqx-wrap tqx-nav">
+  <span class="tqx-logo" style="font-size:1.4rem;">Twin<span class="x">QX</span></span>
+  <nav class="links">
+    <a href="#platform">Platform</a>
+    <a href="#ontology">Ontology</a>
+    <a href="#twin">Digital Twin</a>
+    <a class="tqx-btn" href="#demo">Request demo</a>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="tqx-wrap tqx-section hero">
+    <div>
+      <div class="tqx-label eyebrow">SCADA × ONTOLOGY × AI</div>
+      <h1>The digital twin that <em style="font-style:normal;color:var(--brand)">thinks</em>.</h1>
+      <p>{{HERO_SUBTITLE}} — turn live SCADA tags into queryable knowledge, then let AI act on it.</p>
+      <div class="cta">
+        <a class="tqx-btn" href="#demo">Request a demo</a>
+        <a class="tqx-btn tqx-btn--ghost" href="#platform">See the platform</a>
+      </div>
+    </div>
+
+    <!-- Live dashboard mock (dark face inherited from Hướng A) -->
+    <div class="dash">
+      <div class="row" style="border:none;color:var(--muted)">
+        <span>PLANT 03 · BOILER LOOP</span><span style="color:var(--tqx-watch)">● 2 ANOMALIES</span>
+      </div>
+      <div class="big">14.8<span style="font-size:1rem;color:var(--muted)"> bar</span></div>
+      <div class="row" style="color:var(--tqx-amber)">▲ 0.4 vs predicted</div>
+      <div class="row"><span>Efficiency η</span><span>91.4%</span></div>
+      <div class="row"><span>Anomaly score</span><span style="color:var(--tqx-watch)">0.27</span></div>
+      <div class="row" style="border:none"><span>AGENT · PRESSURE-OPT-V4</span><span style="color:var(--tqx-sienna)">TRUST 0.94</span></div>
+    </div>
+  </section>
+
+  <!-- COLOR / BRAND PREVIEW -->
+  <section class="tqx-wrap tqx-section" id="platform">
+    <div class="tqx-label" style="margin-bottom:1rem;">MASTER PALETTE · HỎA-THỔ</div>
+    <h2>Terracotta Atlas.</h2>
+    <div class="swatch-grid" style="margin-top:2rem;">
+      <div class="tqx-swatch" style="background:#A14B2B;color:#F4ECD8">A14B2B · Terracotta</div>
+      <div class="tqx-swatch" style="background:#D4A03E;color:#2A1A12">D4A03E · Ochre</div>
+      <div class="tqx-swatch" style="background:#C97B4A;color:#2A1A12">C97B4A · Sienna</div>
+      <div class="tqx-swatch" style="background:#5C3B22;color:#F4ECD8">5C3B22 · Chocolate</div>
+      <div class="tqx-swatch" style="background:#2A1A12;color:#F4ECD8">2A1A12 · Warm ink</div>
+      <div class="tqx-swatch" style="background:#F4ECD8;color:#2A1A12;border:1px solid var(--hairline)">F4ECD8 · Cream</div>
+    </div>
+  </section>
+</main>
+
+<footer class="tqx-wrap tqx-footer">
+  TwinQX · {{YEAR}} · Industrial intelligence
+</footer>
+
+</body>
+</html>

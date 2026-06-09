@@ -1,0 +1,21 @@
+{
+  "name": "tqx-tools",
+  "owner": {
+    "name": "quanap5",
+    "email": "you@example.com"
+  },
+  "description": "TwinQX / XISOM design and HTML tooling for Claude Code.",
+  "metadata": {
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "tqx-preview-html",
+      "source": "./plugins/tqx-preview-html",
+      "description": "TwinQX Terracotta Atlas single-file HTML page builder (landing pages, brand previews, SCADA dashboard mocks).",
+      "version": "1.0.0",
+      "category": "design",
+      "tags": ["twinqx", "html", "branding", "design-system"]
+    }
+  ]
+}
