@@ -3,6 +3,10 @@
 [![Validate plugins](https://github.com/quanap5/tqx-claude-plugins/actions/workflows/validate-plugins.yml/badge.svg)](https://github.com/quanap5/tqx-claude-plugins/actions/workflows/validate-plugins.yml)
 
 <p align="center">
+  <img src="assets/tqx-banner.png" alt="TQX-Toolkit — TwinQX tooling for Claude Code" width="860">
+</p>
+
+<p align="center">
   <img src="assets/tqx-demo.gif" alt="tqx in the terminal — ccusage, diagram-excalidraw, preview-html" width="760">
 </p>
 

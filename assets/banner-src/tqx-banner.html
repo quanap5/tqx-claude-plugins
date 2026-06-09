@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>TQX-Toolkit · TwinQX banner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   TwinQX · Terracotta Atlas — tokens (inlined, source of truth)
+   ============================================================ */
+:root{
+  --tqx-cream:#F4ECD8; --tqx-paper:#F8F2E4; --tqx-ink:#2A1A12;
+  --tqx-terracotta:#A14B2B; --tqx-sienna:#C97B4A; --tqx-ochre:#D4A03E;
+  --tqx-chocolate:#5C3B22; --tqx-linen:#E7DCC4; --tqx-warm-gray:#A89880;
+  --tqx-copper:#B08C5A;
+  --bg:var(--tqx-cream); --surface:var(--tqx-paper); --text:var(--tqx-ink);
+  --muted:var(--tqx-warm-gray); --brand:var(--tqx-terracotta);
+  --accent:var(--tqx-ochre); --signal:var(--tqx-sienna); --hairline:var(--tqx-linen);
+  --font-display:'Geist','Inter',system-ui,-apple-system,sans-serif;
+  --font-mono:'IBM Plex Mono',ui-monospace,'SF Mono',monospace;
+  --track:0.22em;
+}
+*,*::before,*::after{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+
+/* Banner is a fixed-size stage so it rasterizes to exact pixels */
+.banner{
+  position:relative; width:1280px; height:400px; overflow:hidden;
+  background:var(--bg); color:var(--text);
+  font-family:var(--font-display); letter-spacing:-0.01em;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* ── Atlas backdrop: warm structure, ~30%, kept quiet ───────── */
+/* faint isobath / contour rings on the right — "knowledge atlas in fired ceramic" */
+.atlas-rings{position:absolute; inset:0; pointer-events:none;}
+.atlas-rings svg{position:absolute; right:-180px; top:50%; transform:translateY(-50%);
+  width:760px; height:760px; opacity:0.5;}
+/* subtle warm glow seated under the rings (the 10% accent, low alpha) */
+.glow{position:absolute; right:-60px; top:50%; transform:translateY(-50%);
+  width:620px; height:620px; border-radius:50%;
+  background:radial-gradient(circle at 50% 50%,
+     rgba(212,160,62,0.22) 0%, rgba(201,123,74,0.14) 38%, rgba(161,75,43,0.0) 70%);
+  pointer-events:none;}
+/* fine warm grid across the whole stage, very low alpha (structure) */
+.grid{position:absolute; inset:0; pointer-events:none; opacity:0.55;
+  background-image:
+    linear-gradient(to right, rgba(92,59,34,0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(92,59,34,0.05) 1px, transparent 1px);
+  background-size:48px 48px;
+  -webkit-mask-image:linear-gradient(90deg, transparent 0%, #000 22%, #000 100%);
+          mask-image:linear-gradient(90deg, transparent 0%, #000 22%, #000 100%);
+}
+/* a single terracotta keyline at the base — brand seam */
+.seam{position:absolute; left:0; right:0; bottom:0; height:6px;
+  background:linear-gradient(90deg, var(--brand) 0%, var(--signal) 40%, var(--accent) 100%);}
+
+/* ── Content column, inside the safe zone ───────────────────── */
+.content{position:absolute; left:88px; top:0; bottom:0;
+  display:flex; flex-direction:column; justify-content:center; gap:18px; max-width:760px;}
+
+.eyebrow{display:flex; align-items:center; gap:14px;
+  font-family:var(--font-mono); font-size:13px; font-weight:500;
+  text-transform:uppercase; letter-spacing:var(--track); color:var(--brand);}
+.eyebrow .dot{width:7px; height:7px; border-radius:50%; background:var(--accent);
+  box-shadow:0 0 0 4px rgba(212,160,62,0.18);}
+.eyebrow .sep{width:1px; height:14px; background:var(--hairline);}
+.eyebrow .by{color:var(--muted);}
+
+/* Wordmark headline — only the X is accented (brand rule) */
+.title{font-family:var(--font-display); font-weight:700; line-height:0.98;
+  letter-spacing:-0.035em; font-size:104px; margin:0; color:var(--text);}
+.title .x{color:var(--accent);}
+.title .tail{color:var(--text);}
+
+.tagline{font-size:23px; line-height:1.35; color:var(--tqx-chocolate);
+  font-weight:500; letter-spacing:-0.015em; margin:0; max-width:600px;}
+.tagline b{color:var(--brand); font-weight:600;}
+
+/* skill chips — mono texture, the real skill names */
+.chips{display:flex; gap:12px; margin-top:6px; flex-wrap:wrap;}
+.chip{font-family:var(--font-mono); font-size:13.5px; font-weight:500;
+  letter-spacing:0.02em; color:var(--tqx-chocolate);
+  background:var(--surface); border:1px solid var(--hairline);
+  padding:8px 14px; border-radius:999px; display:inline-flex; align-items:center; gap:8px;}
+.chip .pre{color:var(--brand);}
+
+/* corner mono coordinate — atlas flavor, top-right */
+.coord{position:absolute; right:40px; top:30px;
+  font-family:var(--font-mono); font-size:12px; letter-spacing:0.18em;
+  text-transform:uppercase; color:var(--muted);}
+</style>
+</head>
+<body>
+<div class="banner">
+  <div class="grid"></div>
+  <div class="glow"></div>
+  <div class="atlas-rings">
+    <svg viewBox="0 0 760 760" fill="none" aria-hidden="true">
+      <g stroke="#A14B2B" stroke-opacity="0.55" fill="none">
+        <circle cx="380" cy="380" r="120" stroke-width="1.5"/>
+        <circle cx="380" cy="380" r="186" stroke-width="1.5" stroke-opacity="0.42"/>
+        <circle cx="380" cy="380" r="252" stroke-width="1.5" stroke-opacity="0.30"/>
+        <circle cx="380" cy="380" r="320" stroke-width="1.5" stroke-opacity="0.20"/>
+      </g>
+      <g stroke="#D4A03E" stroke-opacity="0.7" fill="none">
+        <circle cx="380" cy="380" r="56" stroke-width="2"/>
+      </g>
+      <!-- knowledge-graph nodes on the inner ring -->
+      <g fill="#A14B2B">
+        <circle cx="380" cy="260" r="7"/>
+        <circle cx="500" cy="380" r="7"/>
+        <circle cx="296" cy="466" r="6" fill="#C97B4A"/>
+        <circle cx="466" cy="296" r="5" fill="#D4A03E"/>
+      </g>
+      <g stroke="#5C3B22" stroke-opacity="0.5" stroke-width="1.5">
+        <line x1="380" y1="260" x2="500" y2="380"/>
+        <line x1="500" y1="380" x2="296" y2="466"/>
+        <line x1="296" y1="466" x2="380" y2="260"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="coord">14°N · 108°E — ATLAS</div>
+
+  <div class="content">
+    <div class="eyebrow">
+      <span class="dot"></span>
+      <span>Claude Code · plugin marketplace</span>
+      <span class="sep"></span>
+      <span class="by">by Twin<span style="color:var(--accent)">QX</span></span>
+    </div>
+
+    <h1 class="title">TQ<span class="x">X</span><span class="tail">-Toolkit</span></h1>
+
+    <p class="tagline">TwinQX tooling for Claude Code — <b>token&nbsp;usage</b>, brand&nbsp;diagrams, and self-contained HTML, the precise &amp; quiet way.</p>
+
+    <div class="chips">
+      <span class="chip"><span class="pre">tqx:</span>ccusage</span>
+      <span class="chip"><span class="pre">tqx:</span>diagram-excalidraw</span>
+      <span class="chip"><span class="pre">tqx:</span>preview-html</span>
+    </div>
+  </div>
+
+  <div class="seam"></div>
+</div>
+</body>
+</html>
