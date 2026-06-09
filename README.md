@@ -1,5 +1,7 @@
 # tqx-tools — Claude Code plugin marketplace
 
+[![Validate plugins](https://github.com/quanap5/tqx-claude-plugins/actions/workflows/validate-plugins.yml/badge.svg)](https://github.com/quanap5/tqx-claude-plugins/actions/workflows/validate-plugins.yml)
+
 A marketplace of TwinQX design tooling for [Claude Code](https://code.claude.com).
 
 ## Plugins
