@@ -17,5 +17,10 @@ jobs:
       - name: Validate marketplace
         run: claude plugin validate .
 
-      - name: Validate plugin
-        run: claude plugin validate ./plugins/tqx-preview-html
+      - name: Validate every plugin
+        run: |
+          for plugin in plugins/*/; do
+            echo "::group::Validating $plugin"
+            claude plugin validate "$plugin"
+            echo "::endgroup::"
+          done
