@@ -2,6 +2,10 @@
 
 [![Validate plugins](https://github.com/quanap5/tqx-claude-plugins/actions/workflows/validate-plugins.yml/badge.svg)](https://github.com/quanap5/tqx-claude-plugins/actions/workflows/validate-plugins.yml)
 
+<p align="center">
+  <img src="assets/tqx-ccusage-demo.gif" alt="tqx:ccusage — token & cost report in the terminal" width="760">
+</p>
+
 A marketplace of TwinQX tooling for [Claude Code](https://code.claude.com). Everything ships as a
 single plugin, **`tqx`**, whose skills are namespaced `tqx:`.
 
