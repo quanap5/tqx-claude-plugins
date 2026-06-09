@@ -5,3 +5,6 @@ node_modules/
 # Editor crash/recovery backups (e.g. *mx-recovery* dumps) accidentally committed
 *mx-recovery*
 _*_README.md
+
+# Local planning artifacts — not shipped to the marketplace
+plans/
