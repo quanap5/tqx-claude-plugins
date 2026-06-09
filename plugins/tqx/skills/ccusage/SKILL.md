@@ -1,14 +1,12 @@
 ---
 name: ccusage
 description: >-
-  Report Claude Code token usage and cost using the ccusage CLI. Use this skill WHENEVER
-  someone asks about their token usage, API/usage cost, how much they've spent, cost per
-  model, or a usage breakdown by day/week/month/session — including phrasings like "how
-  many tokens did I use", "what's my Claude Code cost", "ccusage report", "token usage this
-  month", "cost per model", "daily/weekly/monthly usage", "usage by session", "billing
-  blocks", "how much have I spent on Claude", "kiểm tra token/chi phí". The skill checks
-  whether the ccusage CLI is installed, installs it if missing (or falls back to npx),
-  runs the requested mode, and summarizes token counts and cost grouped by model.
+  Report Claude Code token usage and estimated cost using the ccusage CLI. Use whenever
+  someone asks about token usage, API or usage cost, how much they have spent, cost per
+  model, or a usage breakdown over time (daily, weekly, monthly, per session, or per
+  billing block). The skill checks whether the ccusage CLI is installed, installs it if
+  missing (or falls back to npx), runs the requested mode, and summarizes token counts
+  and cost grouped by model.
 ---
 
 # ccusage — Token & Cost Reporter

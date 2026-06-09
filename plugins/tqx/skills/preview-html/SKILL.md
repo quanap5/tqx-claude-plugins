@@ -1,16 +1,12 @@
 ---
 name: preview-html
 description: >-
-  Build self-contained HTML pages for the TwinQX brand using the "Terracotta Atlas"
-  (Phương án B) visual system — warm Hỏa-Thổ palette (terracotta #A14B2B, golden ochre
-  #D4A03E, burnt sienna, chocolate, cream, warm ink), Geist + IBM Plex Mono type, the
-  X-only accented wordmark, and a dark product face for dashboards. Use this skill
-  WHENEVER someone wants a TwinQX web page, HTML preview, landing page, product showcase,
-  brand/style preview page, pitch in HTML, whitepaper page, ontology/knowledge-graph
-  page, or SCADA dashboard mock — including phrasings like "make a TwinQX landing page",
-  "TwinQX HTML preview", "trang giới thiệu TwinQX", "preview brand TwinQX", "dashboard
-  TwinQX", or any single-file branded HTML for TwinQX. This is the current TwinQX brand
-  (warm terracotta/ochre, NOT cool blue) — prefer it for any TwinQX HTML deliverable.
+  Build self-contained, single-file HTML pages (CSS inlined, no build step) in the TwinQX
+  Terracotta Atlas visual style — a warm, premium design system. Use whenever someone wants
+  a web page, HTML preview, landing page, product showcase, style or brand preview, pitch
+  page, whitepaper page, knowledge-graph page, or dashboard mockup delivered as one
+  ready-to-open HTML file. The output is always a single .html the user can open directly
+  in a browser.
 ---
 
 # TwinQX · Terracotta Atlas — HTML Preview Builder

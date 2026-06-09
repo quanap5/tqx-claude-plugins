@@ -1,13 +1,11 @@
 ---
 name: diagram-excalidraw
 description: >-
-  Create Excalidraw (.excalidraw) diagram JSON files that make visual arguments, styled in
-  the TwinQX "Terracotta Atlas" brand (warm Hỏa-Thổ palette — terracotta, golden ochre, burnt
-  sienna, chocolate, cream; NO green, NO cool blue). Use WHENEVER someone wants to visualize a
-  workflow, architecture, system, protocol, data flow, concept, or mental model as an Excalidraw
-  diagram — including phrasings like "draw an excalidraw diagram", "visualize this architecture",
-  "diagram the flow", "TwinQX diagram", "vẽ sơ đồ excalidraw", "sơ đồ kiến trúc". Produces a
-  brand-consistent .excalidraw file and renders it to PNG for visual validation.
+  Create Excalidraw (.excalidraw) diagrams that make a clear visual argument — architectures,
+  workflows, systems, protocols, data flows, and concepts — styled in the TwinQX Terracotta
+  Atlas visual system (warm palette, no green or cool blue). Use whenever someone wants to
+  draw or visualize a diagram, flowchart, architecture, or system as an Excalidraw file.
+  Produces the .excalidraw JSON and renders it to PNG for visual validation.
 ---
 
 # TwinQX · Terracotta Atlas — Excalidraw Diagram Creator

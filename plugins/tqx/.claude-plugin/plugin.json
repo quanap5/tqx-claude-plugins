@@ -1,7 +1,7 @@
 {
   "name": "tqx",
-  "version": "1.0.1",
-  "description": "TwinQX toolkit for Claude Code — bundles three skills under the tqx: namespace: ccusage (token/cost reporting), preview-html (Terracotta Atlas HTML page builder), and diagram-excalidraw (brand-styled Excalidraw diagrams with a Playwright render pipeline).",
+  "version": "1.0.2",
+  "description": "Toolkit for Claude Code bundling three skills under the tqx: namespace: ccusage (token and cost usage reporting), preview-html (single-file HTML page builder in the TwinQX visual style), and diagram-excalidraw (Excalidraw diagram creation with a render pipeline).",
   "author": {
     "name": "quanap5",
     "email": "quanap5@gmail.com"
