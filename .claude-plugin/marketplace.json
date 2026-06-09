@@ -24,6 +24,14 @@
       "version": "1.0.0",
       "category": "analytics",
       "tags": ["ccusage", "token-usage", "cost", "reporting", "analytics"]
+    },
+    {
+      "name": "tqx-diagram-excalidraw",
+      "source": "./plugins/tqx-diagram-excalidraw",
+      "description": "Create Excalidraw diagrams that argue visually, styled in the TwinQX Terracotta Atlas brand (warm Hỏa-Thổ palette, no green/blue). Includes a Playwright render pipeline for visual validation.",
+      "version": "1.0.0",
+      "category": "design",
+      "tags": ["twinqx", "excalidraw", "diagram", "visualization", "design-system"]
     }
   ]
 }

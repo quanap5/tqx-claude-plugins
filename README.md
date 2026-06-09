@@ -8,6 +8,7 @@ A marketplace of TwinQX design tooling for [Claude Code](https://code.claude.com
 |--------|--------------|
 | `tqx-preview-html` | Build single-file, self-contained **TwinQX** HTML pages in the *Terracotta Atlas* visual system (warm Hỏa-Thổ palette, Geist + IBM Plex Mono, X-accented wordmark, dark product face for dashboards). |
 | `tqx-ccusage` | Report Claude Code **token usage and cost per model** by daily / weekly / monthly / session / billing-block mode via the `ccusage` CLI. Auto-installs `ccusage` if missing (or falls back to `npx`), then summarizes the output. |
+| `tqx-diagram-excalidraw` | Create **Excalidraw diagrams that argue visually**, styled in the **TwinQX** Terracotta Atlas brand (warm Hỏa-Thổ palette, no green/blue). Includes a Playwright render pipeline so the agent can see and fix its own output. Adapted from [coleam00/excalidraw-diagram-skill](https://github.com/coleam00/excalidraw-diagram-skill) (MIT). |
 
 ## Install (for other people)
 
@@ -17,6 +18,7 @@ In Claude Code, add this marketplace once, then install the plugin:
 /plugin marketplace add quanap5/tqx-claude-plugins
 /plugin install tqx-preview-html@tqx-tools
 /plugin install tqx-ccusage@tqx-tools
+/plugin install tqx-diagram-excalidraw@tqx-tools
 ```
 
 Or from the terminal (non-interactive):
