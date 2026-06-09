@@ -7,6 +7,7 @@ A marketplace of TwinQX design tooling for [Claude Code](https://code.claude.com
 | Plugin | What it does |
 |--------|--------------|
 | `tqx-preview-html` | Build single-file, self-contained **TwinQX** HTML pages in the *Terracotta Atlas* visual system (warm Hỏa-Thổ palette, Geist + IBM Plex Mono, X-accented wordmark, dark product face for dashboards). |
+| `tqx-ccusage` | Report Claude Code **token usage and cost per model** by daily / weekly / monthly / session / billing-block mode via the `ccusage` CLI. Auto-installs `ccusage` if missing (or falls back to `npx`), then summarizes the output. |
 
 ## Install (for other people)
 
@@ -15,6 +16,7 @@ In Claude Code, add this marketplace once, then install the plugin:
 ```text
 /plugin marketplace add quanap5/tqx-claude-plugins
 /plugin install tqx-preview-html@tqx-tools
+/plugin install tqx-ccusage@tqx-tools
 ```
 
 Or from the terminal (non-interactive):
@@ -45,17 +47,23 @@ tqx-claude-plugins/
 ├── .claude-plugin/
 │   └── marketplace.json              # the catalog (lists all plugins)
 └── plugins/
-    └── tqx-preview-html/
+    ├── tqx-preview-html/
+    │   ├── .claude-plugin/
+    │   │   └── plugin.json           # this plugin's manifest
+    │   └── skills/
+    │       └── tqx-preview-html/
+    │           ├── SKILL.md          # skill entry point (frontmatter = trigger)
+    │           ├── assets/
+    │           │   ├── tokens.css
+    │           │   └── template.html
+    │           └── references/
+    │               └── components.md
+    └── tqx-ccusage/
         ├── .claude-plugin/
-        │   └── plugin.json           # this plugin's manifest
+        │   └── plugin.json
         └── skills/
-            └── tqx-preview-html/
-                ├── SKILL.md          # skill entry point (frontmatter = trigger)
-                ├── assets/
-                │   ├── tokens.css
-                │   └── template.html
-                └── references/
-                    └── components.md
+            └── tqx-ccusage/
+                └── SKILL.md          # token/cost reporting via ccusage CLI
 ```
 
 ## Validate before pushing

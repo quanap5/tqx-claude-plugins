@@ -16,6 +16,14 @@
       "version": "1.0.0",
       "category": "design",
       "tags": ["twinqx", "html", "branding", "design-system"]
+    },
+    {
+      "name": "tqx-ccusage",
+      "source": "./plugins/tqx-ccusage",
+      "description": "Report Claude Code token usage and cost per model by daily / weekly / monthly / session / billing-block mode via the ccusage CLI (auto-installs if missing, then summarizes).",
+      "version": "1.0.0",
+      "category": "analytics",
+      "tags": ["ccusage", "token-usage", "cost", "reporting", "analytics"]
     }
   ]
 }
