@@ -13,7 +13,7 @@
       "name": "tqx",
       "source": "./plugins/tqx",
       "description": "TwinQX toolkit — three skills under the tqx: namespace: ccusage (token/cost reporting), preview-html (Terracotta Atlas HTML builder), diagram-excalidraw (brand Excalidraw diagrams with render pipeline).",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "design",
       "tags": ["twinqx", "ccusage", "html", "excalidraw", "diagram", "design-system", "analytics"]
     }

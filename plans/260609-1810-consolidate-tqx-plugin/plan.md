@@ -1,7 +1,7 @@
 ---
 title: 'Consolidate marketplace into single tqx plugin (tqx: namespace)'
 description: ''
-status: in-progress
+status: completed
 priority: P2
 branch: main
 tags: []
@@ -67,7 +67,7 @@ plugins/tqx/
 |-------|------|--------|
 | 1 | [Consolidate structure](./phase-01-consolidate-structure.md) | Completed |
 | 2 | [Update refs and manifests](./phase-02-update-refs-and-manifests.md) | Completed |
-| 3 | [Validate and migrate](./phase-03-validate-and-migrate.md) | In Progress |
+| 3 | [Validate and migrate](./phase-03-validate-and-migrate.md) | Completed |
 
 ## Dependencies
 
