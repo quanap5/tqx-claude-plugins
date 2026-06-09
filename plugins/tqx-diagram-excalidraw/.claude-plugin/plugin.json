@@ -1,6 +1,6 @@
 {
   "name": "tqx-diagram-excalidraw",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create Excalidraw (.excalidraw) diagrams that argue visually, styled in the TwinQX Terracotta Atlas brand (warm Hỏa-Thổ palette — terracotta, ochre, sienna, chocolate, cream; no green, no cool blue). Includes a Playwright render pipeline for visual validation. Adapted from coleam00/excalidraw-diagram-skill (MIT).",
   "author": {
     "name": "quanap5",
