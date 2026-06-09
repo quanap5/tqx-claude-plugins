@@ -1,0 +1,5 @@
+# Allow native post-install builds required by the toolchain (esbuild = Vite/Astro bundler
+# binary, sharp = image optimization). Standard pnpm key — read by CI's vanilla pnpm.
+onlyBuiltDependencies:
+  - esbuild
+  - sharp

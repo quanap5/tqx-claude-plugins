@@ -8,3 +8,10 @@ _*_README.md
 
 # Local planning artifacts — not shipped to the marketplace
 plans/
+
+# Doc site (Astro) build artifacts + generated skill pages (regenerated from SKILL.md)
+site/node_modules/
+site/dist/
+site/.astro/
+site/src/content/docs/skills/
+site/src/data-catalog.json

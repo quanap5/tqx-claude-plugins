@@ -1,0 +1,19 @@
+{
+  "name": "tqx-docs",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "gen": "node scripts/gen-skill-pages.mjs",
+    "predev": "node scripts/gen-skill-pages.mjs",
+    "dev": "astro dev",
+    "prebuild": "node scripts/gen-skill-pages.mjs",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.40.0",
+    "astro": "^6.4.5",
+    "sharp": "^0.34.2"
+  }
+}

@@ -1,0 +1,33 @@
+---
+title: Install
+description: Add the tqx marketplace and install the plugin in Claude Code.
+---
+
+`tqx` ships as a single [Claude Code](https://code.claude.com) plugin whose skills are namespaced `tqx:`.
+
+## Add the marketplace, then install
+
+```text
+/plugin marketplace add quanap5/tqx-claude-plugins
+/plugin install tqx@tqx-tools
+```
+
+Or from the terminal (non-interactive):
+
+```bash
+claude plugin marketplace add quanap5/tqx-claude-plugins
+claude plugin install tqx@tqx-tools
+```
+
+## Update / remove
+
+```text
+/plugin marketplace update tqx-tools
+/plugin uninstall tqx@tqx-tools
+```
+
+## Requirements
+
+- [Claude Code](https://code.claude.com) (CLI, desktop, or IDE extension).
+- No other setup: `tqx:ccusage` auto-installs the `ccusage` CLI on first run, and
+  `tqx:diagram-excalidraw` bundles its own render pipeline (Python + Playwright, set up on first use).

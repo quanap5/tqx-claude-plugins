@@ -1,0 +1,46 @@
+---
+title: tqx
+description: "TwinQX tooling for Claude Code — three skills under the tqx: namespace."
+template: splash
+hero:
+  tagline: "Three skills under the tqx: namespace — token & cost reporting, branded HTML pages, and Excalidraw diagrams. One plugin, zero config."
+  actions:
+    - text: Install
+      link: /install/
+      icon: right-arrow
+    - text: GitHub
+      link: https://github.com/quanap5/tqx-claude-plugins
+      variant: minimal
+      icon: external
+---
+
+import { Card, CardGrid, LinkCard, Code } from '@astrojs/starlight/components';
+
+## Quick install
+
+```text
+/plugin marketplace add quanap5/tqx-claude-plugins
+/plugin install tqx@tqx-tools
+```
+
+After install, each skill triggers automatically when you describe the task — or call it directly as `tqx:<name>`.
+
+## Skills
+
+<CardGrid>
+  <LinkCard
+    title="tqx:ccusage"
+    href="/tqx-claude-plugins/skills/ccusage/"
+    description="Report Claude Code token usage and cost per model — daily, weekly, monthly, session, or billing block."
+  />
+  <LinkCard
+    title="tqx:preview-html"
+    href="/tqx-claude-plugins/skills/preview-html/"
+    description="Build single-file, self-contained HTML pages in the TwinQX Terracotta Atlas visual style."
+  />
+  <LinkCard
+    title="tqx:diagram-excalidraw"
+    href="/tqx-claude-plugins/skills/diagram-excalidraw/"
+    description="Create Excalidraw diagrams that argue visually — architectures, flows, systems — rendered to PNG."
+  />
+</CardGrid>
