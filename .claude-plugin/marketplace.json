@@ -10,28 +10,12 @@
   },
   "plugins": [
     {
-      "name": "tqx-preview-html",
-      "source": "./plugins/tqx-preview-html",
-      "description": "TwinQX Terracotta Atlas single-file HTML page builder (landing pages, brand previews, SCADA dashboard mocks).",
+      "name": "tqx",
+      "source": "./plugins/tqx",
+      "description": "TwinQX toolkit — three skills under the tqx: namespace: ccusage (token/cost reporting), preview-html (Terracotta Atlas HTML builder), diagram-excalidraw (brand Excalidraw diagrams with render pipeline).",
       "version": "1.0.0",
       "category": "design",
-      "tags": ["twinqx", "html", "branding", "design-system"]
-    },
-    {
-      "name": "tqx-ccusage",
-      "source": "./plugins/tqx-ccusage",
-      "description": "Report Claude Code token usage and cost per model by daily / weekly / monthly / session / billing-block mode via the ccusage CLI (auto-installs if missing, then summarizes).",
-      "version": "1.0.0",
-      "category": "analytics",
-      "tags": ["ccusage", "token-usage", "cost", "reporting", "analytics"]
-    },
-    {
-      "name": "tqx-diagram-excalidraw",
-      "source": "./plugins/tqx-diagram-excalidraw",
-      "description": "Create Excalidraw diagrams that argue visually, styled in the TwinQX Terracotta Atlas brand (warm Hỏa-Thổ palette, no green/blue). Includes a Playwright render pipeline for visual validation.",
-      "version": "1.0.1",
-      "category": "design",
-      "tags": ["twinqx", "excalidraw", "diagram", "visualization", "design-system"]
+      "tags": ["twinqx", "ccusage", "html", "excalidraw", "diagram", "design-system", "analytics"]
     }
   ]
 }

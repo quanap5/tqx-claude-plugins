@@ -1,7 +1,7 @@
 # Color Palette & Brand Style — TwinQX · Terracotta Atlas
 
 **This is the single source of truth for all colors and brand-specific styles.** Everything else
-in this skill is universal methodology. These colors mirror the `tqx-preview-html` design tokens
+in this skill is universal methodology. These colors mirror the `preview-html` design tokens
 (Phương án B, warm Hỏa-Thổ system). Use them verbatim — **never invent hex values.**
 
 Hard rules (carry over from the TwinQX brand): **no green, no cool blue/teal/cyan, warm only.**

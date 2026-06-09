@@ -1,5 +1,5 @@
 ---
-name: tqx-diagram-excalidraw
+name: diagram-excalidraw
 description: >-
   Create Excalidraw (.excalidraw) diagram JSON files that make visual arguments, styled in
   the TwinQX "Terracotta Atlas" brand (warm Hỏa-Thổ palette — terracotta, golden ochre, burnt
@@ -14,7 +14,7 @@ description: >-
 
 Generate `.excalidraw` JSON files that **argue visually**, not just display information — in the
 **TwinQX Terracotta Atlas** brand system (warm, premium, print-grade; the same Hỏa-Thổ palette as
-the `tqx-preview-html` skill).
+the `preview-html` skill).
 
 **Setup:** If the user asks you to set up this skill (renderer, dependencies, etc.), see the
 *Render & Validate → First-Time Setup* section below.
@@ -479,7 +479,7 @@ You cannot judge a diagram from JSON alone. After generating or editing the Exca
 
 Run from **this skill's own `references/` directory** (the folder next to this `SKILL.md` — its
 exact path depends on where the plugin is installed, e.g.
-`~/.claude/plugins/.../tqx-diagram-excalidraw/skills/tqx-diagram-excalidraw/references`):
+`~/.claude/plugins/.../tqx/skills/diagram-excalidraw/references`):
 
 ```bash
 cd <this-skill>/references && uv run python render_excalidraw.py <path-to-file.excalidraw>

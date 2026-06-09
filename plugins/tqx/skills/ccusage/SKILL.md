@@ -1,5 +1,5 @@
 ---
-name: tqx-ccusage
+name: ccusage
 description: >-
   Report Claude Code token usage and cost using the ccusage CLI. Use this skill WHENEVER
   someone asks about their token usage, API/usage cost, how much they've spent, cost per

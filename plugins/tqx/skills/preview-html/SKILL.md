@@ -1,5 +1,5 @@
 ---
-name: tqx-preview-html
+name: preview-html
 description: >-
   Build self-contained HTML pages for the TwinQX brand using the "Terracotta Atlas"
   (Phương án B) visual system — warm Hỏa-Thổ palette (terracotta #A14B2B, golden ochre

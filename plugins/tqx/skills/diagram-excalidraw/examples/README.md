@@ -1,4 +1,4 @@
-# Examples — tqx-diagram-excalidraw
+# Examples — tqx:diagram-excalidraw
 
 Reference output produced by this skill, so you can see what a real diagram looks like.
 
