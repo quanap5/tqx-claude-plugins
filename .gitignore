@@ -6,8 +6,9 @@ node_modules/
 *mx-recovery*
 _*_README.md
 
-# Local planning artifacts — not shipped to the marketplace
+# Local planning artifacts + dev journals — not shipped to the marketplace
 plans/
+docs/journals/
 
 # Doc site (Astro) build artifacts + generated skill pages (regenerated from SKILL.md)
 site/node_modules/
