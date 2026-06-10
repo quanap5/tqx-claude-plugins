@@ -2,10 +2,10 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
-// Project pages: https://quanap5.github.io/tqx-claude-plugins
+// Cloudflare Pages serves at the domain root.
 export default defineConfig({
-  site: 'https://quanap5.github.io',
-  base: '/tqx-claude-plugins',
+  site: 'https://tqx-claude-plugins.pages.dev',
+  base: '/',
   integrations: [
     starlight({
       title: 'tqx',

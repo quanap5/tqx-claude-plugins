@@ -44,7 +44,7 @@ After install, skills auto-trigger on intent; commands and agents are callable a
         {items.map((c) => (
           <LinkCard
             title={c.fqid + (c.vendored ? '  ·  vendored' : '')}
-            href={`/tqx-claude-plugins/${c.plural}/${c.slug}/`}
+            href={`${import.meta.env.BASE_URL}${c.plural}/${c.slug}/`.replace('//', '/')}
             description={(c.vendored ? `↗ from ${c.source} — ` : '') + c.short}
           />
         ))}
