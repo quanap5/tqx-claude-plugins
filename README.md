@@ -8,6 +8,7 @@
   <a href="https://github.com/quanap5/tqx-claude-plugins/actions/workflows/validate-plugins.yml"><img src="https://img.shields.io/github/actions/workflow/status/quanap5/tqx-claude-plugins/validate-plugins.yml?style=flat-square&label=validate&labelColor=2A1A12&color=A14B2B" alt="Validate plugins"></a>
   <a href="https://code.claude.com"><img src="https://img.shields.io/badge/Claude_Code-plugin-A14B2B?style=flat-square&labelColor=2A1A12&logo=anthropic&logoColor=F4ECD8" alt="Claude Code plugin"></a>
   <a href="https://tqx-claude-plugins.pages.dev/"><img src="https://img.shields.io/badge/docs-tqx-D4A03E?style=flat-square&labelColor=2A1A12" alt="Docs"></a>
+  <a href="https://tqx-claude-plugins.pages.dev/"><img src="https://img.shields.io/badge/Cloudflare_Pages-live-F38020?style=flat-square&labelColor=2A1A12&logo=cloudflarepages&logoColor=F4ECD8" alt="Deployed on Cloudflare Pages"></a>
   <a href="#skills-in-the-tqx-plugin"><img src="https://img.shields.io/badge/skills-3-D4A03E?style=flat-square&labelColor=2A1A12" alt="3 skills"></a>
   <a href="https://github.com/quanap5/tqx-claude-plugins/releases"><img src="https://img.shields.io/github/v/tag/quanap5/tqx-claude-plugins?style=flat-square&label=version&labelColor=2A1A12&color=C97B4A" alt="Latest version"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-5C3B22?style=flat-square&labelColor=2A1A12" alt="License: MIT"></a>
