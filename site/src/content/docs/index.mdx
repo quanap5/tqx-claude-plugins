@@ -1,9 +1,9 @@
 ---
 title: tqx
-description: "TwinQX tooling for Claude Code — three skills under the tqx: namespace."
+description: "TwinQX tooling for Claude Code — skills, commands, and agents under the tqx: namespace."
 template: splash
 hero:
-  tagline: "Three skills under the tqx: namespace — token & cost reporting, branded HTML pages, and Excalidraw diagrams. One plugin, zero config."
+  tagline: "A Claude Code marketplace of skills, commands, and agents — first-party tqx tooling plus curated, vendored components. One install, zero config."
   actions:
     - text: Install
       link: /install/
@@ -14,7 +14,14 @@ hero:
       icon: external
 ---
 
-import { Card, CardGrid, LinkCard, Code } from '@astrojs/starlight/components';
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+import catalog from '../../data-catalog.json';
+
+export const groups = [
+  { type: 'skill', label: 'Skills', dir: 'skills' },
+  { type: 'command', label: 'Commands', dir: 'commands' },
+  { type: 'agent', label: 'Agents', dir: 'agents' },
+];
 
 ## Quick install
 
@@ -23,24 +30,25 @@ import { Card, CardGrid, LinkCard, Code } from '@astrojs/starlight/components';
 /plugin install tqx@tqx-tools
 ```
 
-After install, each skill triggers automatically when you describe the task — or call it directly as `tqx:<name>`.
+After install, skills auto-trigger on intent; commands and agents are callable as `tqx:<name>`.
 
-## Skills
+## Catalog
 
-<CardGrid>
-  <LinkCard
-    title="tqx:ccusage"
-    href="/tqx-claude-plugins/skills/ccusage/"
-    description="Report Claude Code token usage and cost per model — daily, weekly, monthly, session, or billing block."
-  />
-  <LinkCard
-    title="tqx:preview-html"
-    href="/tqx-claude-plugins/skills/preview-html/"
-    description="Build single-file, self-contained HTML pages in the TwinQX Terracotta Atlas visual style."
-  />
-  <LinkCard
-    title="tqx:diagram-excalidraw"
-    href="/tqx-claude-plugins/skills/diagram-excalidraw/"
-    description="Create Excalidraw diagrams that argue visually — architectures, flows, systems — rendered to PNG."
-  />
-</CardGrid>
+{groups.map((g) => {
+  const items = catalog.filter((c) => c.type === g.type);
+  if (!items.length) return null;
+  return (
+    <>
+      <h3 id={g.dir}>{g.label} <span style="color:var(--sl-color-gray-3);font-weight:400">({items.length})</span></h3>
+      <CardGrid>
+        {items.map((c) => (
+          <LinkCard
+            title={c.fqid + (c.vendored ? '  ·  vendored' : '')}
+            href={`/tqx-claude-plugins/${c.plural}/${c.slug}/`}
+            description={(c.vendored ? `↗ from ${c.source} — ` : '') + c.short}
+          />
+        ))}
+      </CardGrid>
+    </>
+  );
+})}

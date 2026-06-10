@@ -30,6 +30,11 @@ single plugin, **`tqx`**, whose skills are namespaced `tqx:`.
 | `tqx:ccusage` | Report Claude Code **token usage and cost per model** by daily / weekly / monthly / session / billing-block mode via the `ccusage` CLI. Auto-installs `ccusage` if missing (or falls back to `npx`), then summarizes the output. |
 | `tqx:diagram-excalidraw` | Create **Excalidraw diagrams that argue visually**, styled in the **TwinQX** Terracotta Atlas brand (warm Hỏa-Thổ palette, no green/blue). Includes a Playwright render pipeline so the agent can see and fix its own output. Adapted from [coleam00/excalidraw-diagram-skill](https://github.com/coleam00/excalidraw-diagram-skill) (MIT). [See example →](plugins/tqx/skills/diagram-excalidraw/examples/) |
 
+The `tqx` plugin also ships **commands** (`/tqx:marketplace-check`) and **agents** (`tqx:brand-auditor`).
+The full, always-current catalog of skills / commands / agents — including any vendored third-party
+components — lives on the **[docs site](https://quanap5.github.io/tqx-claude-plugins/)** (generated from
+source). See [`CONTRIBUTING.md`](CONTRIBUTING.md) to add a component or vendor a third-party source.
+
 ## Install
 
 In Claude Code, add this marketplace once, then install the `tqx` plugin:

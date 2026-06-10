@@ -14,4 +14,6 @@ site/node_modules/
 site/dist/
 site/.astro/
 site/src/content/docs/skills/
+site/src/content/docs/commands/
+site/src/content/docs/agents/
 site/src/data-catalog.json

@@ -4,10 +4,10 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "gen": "node scripts/gen-skill-pages.mjs",
-    "predev": "node scripts/gen-skill-pages.mjs",
+    "gen": "node scripts/gen-catalog.mjs",
+    "predev": "node scripts/gen-catalog.mjs",
     "dev": "astro dev",
-    "prebuild": "node scripts/gen-skill-pages.mjs",
+    "prebuild": "node scripts/gen-catalog.mjs",
     "build": "astro build",
     "preview": "astro preview"
   },

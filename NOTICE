@@ -1,0 +1,14 @@
+tqx-tools — third-party attributions
+=====================================
+
+First-party components (the `tqx` plugin) are licensed under the repository's MIT LICENSE.
+
+Vendored third-party components, if any, are listed below with their upstream source and license.
+Each vendored plugin also keeps its original LICENSE file in its own directory
+(plugins/<name>/LICENSE) and a VENDOR.md recording the pinned source commit.
+
+Vendored components:
+  (none yet)
+
+To vendor a component, see CONTRIBUTING.md. This file must be updated whenever a vendored plugin is
+added or removed.

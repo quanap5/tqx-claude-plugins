@@ -24,3 +24,6 @@ jobs:
             claude plugin validate "$plugin"
             echo "::endgroup::"
           done
+
+      - name: Vendored-plugin guard (license allowlist + provenance)
+        run: node scripts/check-vendored.mjs

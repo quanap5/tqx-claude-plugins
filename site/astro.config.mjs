@@ -18,6 +18,8 @@ export default defineConfig({
         { label: 'Overview', link: '/' },
         { label: 'Install', link: '/install/' },
         { label: 'Skills', items: [{ autogenerate: { directory: 'skills' } }] },
+        { label: 'Commands', items: [{ autogenerate: { directory: 'commands' } }] },
+        { label: 'Agents', items: [{ autogenerate: { directory: 'agents' } }] },
       ],
     }),
   ],
